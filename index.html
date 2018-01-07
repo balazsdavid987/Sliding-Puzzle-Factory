@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=500, user-scalable=no">
+  <title>Sliding-Puzzle-Factory</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400&subset=latin,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+  <canvas width="477" height="571" id="game"></canvas>
+  <canvas width="362" height="362" id="image"></canvas>
+  <div id="gameplay-details">
+    <span id="timeelapsed"></span>
+    <span id="numberofmoves"></span>
+  </div>
+  <div id="controls">
+    <hr>
+    <div class="settings-language">
+      <span id="textLanguage"></span>
+      <div>
+          <input type="radio" id="lang-en" name="lang" value="en">
+          <label for="lang-en">English</label>
+        </div>
+      <div>
+        <input type="radio" id="lang-hu" name="lang" value="hu">
+        <label for="lang-hu">Magyar</label>
+      </div>
+    </div>
+    <hr>
+    <label for="file" id="btnChooseAnImage"></label>
+    <input id="file" type="file"/>
+    <hr>
+    <div class="settings-image">
+      <div>
+        <div class="settings-image-y">
+          <input type="button" value="&#9650;" id="btnDecreasePositionY">
+        </div>
+        <div class="settings-image-center">  
+          <input type="button" value="&#9664;" id="btnDecreasePositionX">
+          <canvas width="113" height="113" id="help"></canvas>
+          <img id="no-image" src="assets/no-image.png">
+          <input type="button" value="&#9654;" id="btnIncreasePositionX">
+        </div>  
+        <div class="settings-image-y">
+          <input type="button" value="&#9660;" id="btnIncreasePositionY">
+        </div>
+      </div>
+      <div class="settings-image-size">
+        <input type="button" value="+" id="btnIncreaseSize"><br>
+        <input type="button" value="-" id="btnDecreaseSize">
+      </div>
+    </div>
+    <hr>
+    <div class="settings-colors">
+      <div>
+        <span id="textFrame"></span><span id="btnColor1"></span>
+      </div>
+      <div>
+        <span id="textBackground"></span><span id="btnColor2"></span>
+      </div>
+    </div>
+    <hr>
+    <div class="actions">
+      <input id="btnShare" type="button">
+    </div>
+    <hr>
+  </div>
+  <div id="github">
+    Github:
+    <a href="https://github.com/balazsdavid987/Sliding-Puzzle-Factory">
+      https://github.com/balazsdavid987/Sliding-Puzzle-Factory
+    </a>
+  </div>
+</div>
+
+<div id="share">
+  <canvas width="320" height="380" id="small"></canvas>
+  <div id="textShare"></div>
+  <div id="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
+</div>
+
+<script src="jscolor.js"></script>
+<script src="app.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112058816-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112058816-1');
+</script>
+
+
+</body>
+</html>
