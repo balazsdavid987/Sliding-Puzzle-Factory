@@ -5,13 +5,15 @@
 
 # Description
 
-This is a digital implemenation of a 15 puzzle variant that was popular in Hungary during the 80s and 90s. The app lets you create your own custom version of the puzzle: https://balazsdavid987.github.io/Sliding-Puzzle-Factory/
+The app lets you create your own custom digital version of a 15 puzzle variant that was popular in Hungary during the 80s and 90s.
+
+![](assets/screenshot-1.jpg)
+
+Try it here: https://balazsdavid987.github.io/Sliding-Puzzle-Factory/
 
 Choose an image, a color for the frame and another for the background, and you will get an URL on which your puzzle is available.
 
 #  Video demonstration
-
-![](assets/screenshot-1.jpg)
 
 https://www.youtube.com/watch?v=q7US-sD0xgU
 
