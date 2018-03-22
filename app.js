@@ -90,6 +90,7 @@ function parseSettings() {
     settings.x = (parsed.x != undefined ? parseInt(parsed.x) : 0);
     settings.y = (parsed.y != undefined ? parseInt(parsed.y) : 0);
     settings.size = (parsed.s != undefined ? parseInt(parsed.s) : 100);
+    settings.shuffleMoves = (parsed.m != undefined ? parseInt(parsed.m) : 250);
 
     if(parsed.u != undefined) {
       settings.url = parsed.u;
@@ -802,7 +803,7 @@ var legalMoves = {
     document.getElementById('github').style.display = 'none';
     document.getElementById('gameplay-details').style.display = 'flex';
 
-    shuffle(250, false);
+    shuffle(settings.shuffleMoves, false);
 
     settings.isActive = true;
     settings.moves = 0;
